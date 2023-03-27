@@ -1,0 +1,123 @@
+body{
+    /*background-color: rgb(58, 58, 58);*/
+    align-items: center;
+    justify-content: center; 
+    /*background-image: url(bg2.jpg);*/
+}
+
+nav{
+    /* padding: 10px; */
+    background-color: rgb(52, 101, 207);
+    text-decoration-color: aliceblue;
+    /* float: right; */
+    /* width:150%; */
+    overflow: hidden;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+    /* text-align: center; */
+    float: right;
+    color:rgb(255, 255, 255);
+    transition:all;
+}
+nav a:hover{
+    color:rgb(210, 223, 223);
+    transition: all;
+    /* font-size:13px; */
+}
+#logo{
+    float:left;
+    padding-left: 30px;
+    height: 70px;
+    width: 100px;
+    border-radius: 10%;
+}
+.head{
+    height:130px;
+    padding: 10px;
+    /* padding-bottom: 20px; */
+}
+.text{
+    text-align: center;
+}
+#title{
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    font-style: italic;
+    font-size:50px;
+    padding-bottom:5px;
+}
+header{
+    text-align: center;
+    color: white;
+    font-weight:3px;
+    font-size: 20px;
+    text-shadow:#333;
+    padding-top: 100px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    height: 500px;
+}
+
+.banner{
+    background-color: rgb(177, 213, 232);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(banner.jpeg);
+}
+
+.text2{
+    /* display:flex; */
+    padding: 20px;
+    margin:auto
+}
+
+#top_banner{
+    /* float:left;
+    padding-left: 10px; */
+    font-family: 'Noto Serif JP', serif;
+    float:left;
+    padding-top:0px;
+    font-size: 60px;
+}
+#sub_banner{
+    float:left;
+    /* font-family: 'Noto Serif JP', serif; */
+    text-align: left;
+}
+
+.option{
+    margin-left:25%;
+    padding:100px;
+    padding-top:20px;
+}
+.join-btn{
+    color:rgb(52, 101, 207) ;
+}
+
+.card{
+    display:inline-block;
+    /* align-content: center; */  
+}
+
+.card2{
+    padding:10px;
+}
+
+footer{
+    background-color: rgb(52, 101, 207);
+    overflow: hidden;
+}
+footer a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    /* margin-top: 20px; */
+    text-align: center;
+    float: left;
+    color:rgb(245, 245, 245);
+}
+footer a:hover{
+    color:rgb(240, 236, 236);
+}
