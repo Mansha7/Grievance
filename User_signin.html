@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="User_signup.css" />
     <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore-compat.js"></script>
@@ -13,7 +13,7 @@
   <body>
     <div class="form">
       <!-- Email  -->
-      <h1>Register</h1>
+      <h1>Login</h1>
       <br>
       <div class="email">
         <label for="email">Email</label>
@@ -21,7 +21,8 @@
           type="email"
           name="email"
           id="email"
-          placeholder="Write your email"/>
+          placeholder="Write your email"
+        />
       </div>
       <!-- passWord -->
       <div class="pass">
@@ -35,10 +36,10 @@
       </div>
 
       <!-- Sign Up button -->
-      <button id="submit-btn" onclick="signUp()">Sign Up</button>
-      <!-- Sign In option -->
-      <p>Already have an account ?</p>
-      <span><a href="User_signin.html">Sign In</a></span>
+      <button id="submit-btn" onclick="signIn()">Sign In</button>
+     <!-- sign in -->
+      <!-- <p>Already have an account ?</p> -->
+      <span><a href="User_signup.html">Sign Up</a></span>
     </div>
 
     <script src="User_signup.js"></script>

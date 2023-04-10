@@ -21,14 +21,15 @@
 
 <body>
     <nav>
-        <img id="logo" src="logo.jpg">
+        
         
         <a href="#">About Us</a>
         <a href="#">FAQs/Help</a>
         <a href="#">User Manual</a>
         <a href="#">Officers Contact</a>
         <a href="index.html">Home</a>
-
+        <h4 class="logo-text">भारत सरकार</h4>
+        <h4 class="logo-text">Government of India</h4>
         <!-- <div class="head">
             <img id="logo" src="logo.jpg">
             <h2>Grievance Portal</h2>
@@ -37,21 +38,38 @@
     </nav>
     <div class="head">
         <div class="text">
-            <h2 id="title">Grievance Portal</h2>
+            <h2 id="title">
+            <img src="logo.jpg" alt="" width="70px">
+             Grievance Portal</h2>
             <h4 id="subtitle"><i>"Aapki pareshani, hamari zimedari"</i></h4>
         </div>
     </div>
     <header class="banner">  
-        <h1 class="text2" id="top_banner">Welcome to our portal</h1><br>
+        <h1 class="text2" id="top_banner"></h1><br>
         <h3 class="text2" id="sub_banner">Public Grievances Redressal is one of the flagship initiatives for the reformation in governance started by the Indian central government through addressing the grievances of general public.</h3>
+        <br>
+        <div class="option">
+            <div class="card card-1" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="admin.jpg" alt="Card image cap" height="150px" width="200px"> -->
+                <div class="card-body">
+                  <a href="admin_login.html" class="btn btn-primary join-btn">Join as admin</a>
+                </div>
+            </div>
+            
+            <div class="card card-2" style="width: 18rem;">
+                <!-- <img class="card-img-top" src="user.jpg" alt="Card image cap"> -->
+                <div class="card-body">
+                  <a href="User_signup.html" class="btn btn-primary join-btn">Join as user</a>
+                </div>
+            </div>
+    </div>
     </header>
-    <div class="option">
-        <!-- <div class="row"> -->
+
+
+    <!-- <div class="option">
             <div class="card card-1" style="width: 18rem;">
                 <img class="card-img-top" src="admin.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Admin</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="admin_login.html" class="btn btn-primary join-btn">Join as admin</a>
                 </div>
             </div>
@@ -59,14 +77,10 @@
             <div class="card card-2" style="width: 18rem;">
                 <img class="card-img-top" src="user.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">User</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="User_signup.html" class="btn btn-primary join-btn">Join as user</a>
                 </div>
-            <!-- </div> -->
-        </div>
-        
-    </div>
+            </div>
+    </div> -->
 
     <footer>
         <a href="#">FAQ</a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -75,5 +89,5 @@
         <a href="#">Privacy Policy</a> &nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#">&copy; Janhit</a>
     </footer>
-    
+    <script src="./index.js"></script>
 </body>
