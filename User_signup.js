@@ -1,66 +1,57 @@
-const slidePage = document.querySelector(".slide-page");
-const nextBtnFirst = document.querySelector(".firstNext");
-const prevBtnSec = document.querySelector(".prev-1");
-const nextBtnSec = document.querySelector(".next-1");
-const prevBtnThird = document.querySelector(".prev-2");
-const nextBtnThird = document.querySelector(".next-2");
-const prevBtnFourth = document.querySelector(".prev-3");
-const submitBtn = document.querySelector(".submit");
-const progressText = document.querySelectorAll(".step p");
-const progressCheck = document.querySelectorAll(".step .check");
-const bullet = document.querySelectorAll(".step .bullet");
-let current = 1;
-nextBtnFirst.addEventListener("click", function(event){
-  event.preventDefault();
-  slidePage.style.marginLeft = "-25%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
+// setting up firebase
+const firebaseApp = firebase.initializeApp({ 
+  apiKey: "AIzaSyDLVEq0APpy7txJAsOJWhZ64QCDW9Szwqs",
+  authDomain: "authentication-form-2a126.firebaseapp.com",
+  projectId: "authentication-form-2a126",
+  storageBucket: "authentication-form-2a126.appspot.com",
+  messagingSenderId: "391083707528",
+  appId: "1:391083707528:web:27b8734698515916e2a33d",
+  measurementId: "G-YKD32PGNRK" 
 });
-nextBtnSec.addEventListener("click", function(event){
-  event.preventDefault();
-  slidePage.style.marginLeft = "-50%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
+ const db = firebaseApp.firestore();
+ const auth = firebaseApp.auth();
+
+// sign up function
+const signUp=()=>{
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  console.log(email,password);
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((result) => {
+      // Signed in 
+      document.write("You are Signed Up")
+      console.log(result)
+      // var user = userCredential.user;
+      // ...
+  })
+  .catch((error) => {
+      console.log(error.code);
+      console.log(error.message);
+      // var errorCode = error.code;
+      // var errorMessage = error.message;
+      // ..
+  });
+
+}
+
+// sign in function
+
+const signIn=()=>{
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  // firebase code
+   firebase.auth().signInWithEmailAndPassword(email, password)
+.then((result) => {
+  // Signed in
+      document.write("You are Signed In")
+      console.log(result)
+  // ...
+})
+.catch((error) => {
+  console.log(error.code);
+      console.log(error.message);
 });
-nextBtnThird.addEventListener("click", function(event){
-  event.preventDefault();
-  slidePage.style.marginLeft = "-75%";
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
-});
-submitBtn.addEventListener("click", function(){
-  bullet[current - 1].classList.add("active");
-  progressCheck[current - 1].classList.add("active");
-  progressText[current - 1].classList.add("active");
-  current += 1;
-});
-prevBtnSec.addEventListener("click", function(event){
-  event.preventDefault();
-  slidePage.style.marginLeft = "0%";
-  bullet[current - 2].classList.remove("active");
-  progressCheck[current - 2].classList.remove("active");
-  progressText[current - 2].classList.remove("active");
-  current -= 1;
-});
-prevBtnThird.addEventListener("click", function(event){
-  event.preventDefault();
-  slidePage.style.marginLeft = "-25%";
-  bullet[current - 2].classList.remove("active");
-  progressCheck[current - 2].classList.remove("active");
-  progressText[current - 2].classList.remove("active");
-  current -= 1;
-});
-prevBtnFourth.addEventListener("click", function(event){
-  event.preventDefault();
-  slidePage.style.marginLeft = "-50%";
-  bullet[current - 2].classList.remove("active");
-  progressCheck[current - 2].classList.remove("active");
-  progressText[current - 2].classList.remove("active");
-  current -= 1;
-});
+
+
+
+}

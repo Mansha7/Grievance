@@ -12,6 +12,8 @@ nav{
     /* float: right; */
     /* width:150%; */
     overflow: hidden;
+    padding-inline: 10px;
+    margin: 2px;
 }
 
 nav a{
@@ -42,13 +44,18 @@ nav a:hover{
 }
 .text{
     text-align: center;
+    /* float:left; */
+}
+.logo-text{
+    color:white;
 }
 #title{
     font-family: 'Pacifico', cursive;
-    font-weight: lighter;
+    font-weight: bold;
     font-style: italic;
-    font-size:50px;
-    padding-bottom:5px;
+    font-size:45px;
+    padding-bottom:10px;
+    margin-top: 8px;
 }
 header{
     text-align: center;
@@ -65,6 +72,7 @@ header{
 .banner{
     background-color: rgb(177, 213, 232);
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(banner.jpeg);
+    height: 600px;
 }
 
 .text2{
@@ -80,6 +88,11 @@ header{
     float:left;
     padding-top:0px;
     font-size: 60px;
+
+  margin: auto;
+  color: white;
+  font: 700 normal 2.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 #sub_banner{
     float:left;
@@ -88,17 +101,30 @@ header{
 }
 
 .option{
-    margin-left:25%;
-    padding:100px;
-    padding-top:20px;
+    /* margin-left:5%; */
+    /* padding:100px; */
+    padding-top:220px;
 }
 .join-btn{
-    color:rgb(52, 101, 207) ;
+  color:linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  font-size:15px;
+  font-family:Arial;
+  width:142px;
+  height:39px;
+  border-width:1px;
+  border-top-left-radius:10px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  box-shadow: 0px 0px 0px 2px white;
+  text-shadow: 0px 1px 0px #283966;
 }
 
 .card{
     display:inline-block;
     /* align-content: center; */  
+    margin-right: 20px;
+    height:0px;
 }
 
 .card2{
