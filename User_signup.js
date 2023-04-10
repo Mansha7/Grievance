@@ -19,6 +19,7 @@ const signUp=()=>{
   firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((result) => {
       // Signed in 
+      // window.location='User_Home.html';
       document.write("You are Signed Up")
       console.log(result)
       // var user = userCredential.user;
@@ -43,7 +44,8 @@ const signIn=()=>{
    firebase.auth().signInWithEmailAndPassword(email, password)
 .then((result) => {
   // Signed in
-      document.write("You are Signed In")
+      window.location='User_Home.html';
+      // document.write("You are Signed In")
       console.log(result)
   // ...
 })
